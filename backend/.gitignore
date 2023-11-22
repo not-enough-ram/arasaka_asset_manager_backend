@@ -33,6 +33,3 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-/src/Service/FileService.ts
-/src/Controller/GameController.ts
-/src/Service/GameSessionService.ts
