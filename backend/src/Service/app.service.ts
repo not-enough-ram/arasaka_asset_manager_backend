@@ -1,11 +1,12 @@
 import { Injectable } from '@nestjs/common';
-import {Asset, GameSession} from "./Interfaces/Types";
+import {Asset, GameSession} from "../Interfaces/Types";
 
 @Injectable()
 export class AppService {
   getGameSessions(): GameSession[] {
     const mockedData : GameSession[] = [
       {
+        id: '1',
         title: 'Dungeon Delvers',
         gameMaster: 'Alex',
         players: ['Mia', 'Liam', 'Noah', 'Emma'],
@@ -13,6 +14,7 @@ export class AppService {
         description: 'Random Stuff'
       },
       {
+        id: '2',
         title: 'Settlers of Catan',
         gameMaster: 'Jordan',
         players: ['Chris', 'Pat', 'Taylor', 'Jamie'],
@@ -20,6 +22,7 @@ export class AppService {
         description: 'Random Stuff'
       },
       {
+        id: '3',
         title: 'Virtual Chess Tournament',
         gameMaster: 'Sam',
         players: ['Alice', 'Bob', 'Charlie', 'Diana'],
@@ -27,6 +30,7 @@ export class AppService {
         description: 'Random Stuff'
       },
       {
+        id: '4',
         title: 'Community Soccer Match',
         gameMaster: 'Coach Mike',
         players: ['Jordan', 'Ashley', 'Morgan', 'Casey'],
@@ -34,6 +38,7 @@ export class AppService {
         description: 'Random Stuff'
       },
       {
+        id: '5',
         title: 'Warlords Battlecry',
         gameMaster: 'Evelyn',
         players: ['Riley', 'Alexis', 'Shawn', 'Blake'],

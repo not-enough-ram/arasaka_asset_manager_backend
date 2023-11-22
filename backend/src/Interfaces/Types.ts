@@ -1,4 +1,5 @@
-export interface GameSession {
+export class GameSession {
+    id: String;
     title: string;
     gameMaster: string;
     players: string[];
@@ -12,4 +13,12 @@ export interface Asset {
     description: string;
     owner: string;
     imageUrl: string;
+}
+
+export class CreateGameDto {
+    title: string;
+    gameMaster: string;
+    players: string[];
+    description: string;
+    image:File;
 }

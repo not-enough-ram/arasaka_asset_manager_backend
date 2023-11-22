@@ -1,6 +1,6 @@
-import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
-import {Asset, GameSession} from "./Interfaces/Types";
+import {Controller, Get} from '@nestjs/common';
+import { AppService } from '../Service/app.service';
+import {Asset, GameSession} from "../Interfaces/Types";
 
 @Controller()
 export class AppController {
