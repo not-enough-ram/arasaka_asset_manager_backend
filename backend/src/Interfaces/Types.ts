@@ -1,3 +1,5 @@
+import internal from "stream";
+
 export class GameSession {
     id: String;
     title: string;
@@ -21,4 +23,10 @@ export class CreateGameDto {
     players: string[];
     description: string;
     image:File;
+}
+
+export class Profile {
+    name: string;
+    assets: Asset[];
+    games: GameSession[];
 }

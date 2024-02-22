@@ -7,43 +7,43 @@ export class AppService {
     const mockedData : GameSession[] = [
       {
         id: '1',
-        title: 'Dungeon Delvers',
-        gameMaster: 'Alex',
+        title: 'Cyberpunk Red',
+        gameMaster: 'Jonny Silverhand',
         players: ['Mia', 'Liam', 'Noah', 'Emma'],
         imageUrl: 'https://source.unsplash.com/random/?cyberpunk',
-        description: 'Random Stuff'
+        description: 'Welcome to Night City Choom!'
       },
       {
         id: '2',
-        title: 'Settlers of Catan',
+        title: 'D&D',
         gameMaster: 'Jordan',
         players: ['Chris', 'Pat', 'Taylor', 'Jamie'],
-        imageUrl: 'https://source.unsplash.com/random/?cyberpunk',
-        description: 'Random Stuff'
+        imageUrl: 'https://source.unsplash.com/random/?fantasy',
+        description: 'Ready your swords adventurers'
       },
       {
         id: '3',
-        title: 'Virtual Chess Tournament',
+        title: 'Vampire',
         gameMaster: 'Sam',
         players: ['Alice', 'Bob', 'Charlie', 'Diana'],
-        imageUrl: 'https://source.unsplash.com/random/?cyberpunk',
-        description: 'Random Stuff'
+        imageUrl: 'https://source.unsplash.com/random/?vampire',
+        description: 'Deception, masquerade and blood'
       },
       {
         id: '4',
-        title: 'Community Soccer Match',
-        gameMaster: 'Coach Mike',
+        title: 'Shadowrun',
+        gameMaster: 'Jonny Silverhand',
         players: ['Jordan', 'Ashley', 'Morgan', 'Casey'],
         imageUrl: 'https://source.unsplash.com/random/?cyberpunk',
-        description: 'Random Stuff'
+        description: 'The neon lit streets of the awakened world hold many mysteries but danger lurks'
       },
       {
         id: '5',
-        title: 'Warlords Battlecry',
+        title: 'Warhammer 40k',
         gameMaster: 'Evelyn',
         players: ['Riley', 'Alexis', 'Shawn', 'Blake'],
-        imageUrl: 'https://source.unsplash.com/random/?cyberpunk',
-        description: 'Random Stuff'
+        imageUrl: 'https://source.unsplash.com/random/?warhammer40k',
+        description: 'In the distant future, there is only war'
       }
     ];
     return mockedData;
@@ -53,18 +53,18 @@ export class AppService {
     const mockedData = [
       {
         id: "dataset_001",
-        title: "Cosmic Exploration",
+        title: "Character picture Rania",
         description:
-            "Delve into the mysteries of the universe with this immersive space adventure.",
-        owner: "James T. Kirk",
+            "An image of Rania, the Cyberpunk Netrunner",
+        owner: "Jonny Silverhand",
         imageUrl: "https://source.unsplash.com/random/?cyberpunk",
       },
       {
         id: "dataset_002",
-        title: "Historical Journey",
-        description: "Travel back in time to witness key moments in history.",
-        owner: "Ada Lovelace",
-        imageUrl: "https://source.unsplash.com/random/?cyberpunk",
+        title: "Battlemap",
+        description: "A battlemap of a battlefield from the distant future",
+        owner: "Jonny Silverhand",
+        imageUrl: "https://source.unsplash.com/random/?warhammer",
       },
       {
         id: "dataset_003",
@@ -72,7 +72,7 @@ export class AppService {
         description:
             "Experience the vibrant life and hidden treasures beneath the ocean's surface.",
         owner: "Jacques Cousteau",
-        imageUrl: "https://source.unsplash.com/random/?cyberpunk",
+        imageUrl: "https://source.unsplash.com/random/?subnautica",
       },
       {
         id: "dataset_004",
@@ -80,7 +80,7 @@ export class AppService {
         description:
             "Explore the rugged beauty of the world's most awe-inspiring mountain ranges.",
         owner: "Edmund Hillary",
-        imageUrl: "https://source.unsplash.com/random/?cyberpunk",
+        imageUrl: "https://source.unsplash.com/random/?mistymountain",
       },
       {
         id: "dataset_005",
@@ -92,5 +92,47 @@ export class AppService {
       },
     ];
     return mockedData;
+  }
+
+  getProfile(){
+    const profile = 
+      {
+        name: "Jonny Silverhand",
+        assets: [
+          {
+            id: "dataset_001",
+            title: "Character picture Rania",
+            description:
+                "An image of Rania, the Cyberpunk Netrunner",
+            owner: "Jonny Silverhand",
+            imageUrl: "https://source.unsplash.com/random/?cyberpunk",
+          },
+          {
+            id: "dataset_002",
+            title: "Battlemap",
+            description: "A battlemap of a battlefield from the distant future",
+            owner: "Jonny Silverhand",
+            imageUrl: "https://source.unsplash.com/random/?warhammer",
+          }
+        ],
+        games: [
+          {
+            id: '1',
+            title: 'Cyberpunk Red',
+            gameMaster: 'Jonny Silverhand',
+            players: ['Mia', 'Liam', 'Noah', 'Emma'],
+            imageUrl: 'https://source.unsplash.com/random/?cyberpunk',
+            description: 'Welcome to Night City Choom!'
+          },
+          {
+            id: '4',
+            title: 'Shadowrun',
+            gameMaster: 'Jonny Silverhand',
+            players: ['Jordan', 'Ashley', 'Morgan', 'Casey'],
+            imageUrl: 'https://source.unsplash.com/random/?cyberpunk',
+            description: 'The neon lit streets of the awakened world hold many mysteries but danger lurks'
+          }
+        ]
+      }
   }
 }
