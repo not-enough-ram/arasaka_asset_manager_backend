@@ -1,32 +1,30 @@
-import internal from "stream";
-
 export class GameSession {
-    id: String;
-    title: string;
-    gameMaster: string;
-    players: string[];
-    description: string;
-    imageUrl: string;
+  id: string;
+  title: string;
+  gameMaster: string;
+  players: string[];
+  description: string;
+  imageUrl: string;
 }
 
 export interface Asset {
-    id: string;
-    title: string;
-    description: string;
-    owner: string;
-    imageUrl: string;
+  id: string;
+  title: string;
+  description: string;
+  owner: string;
+  imageUrl: string;
 }
 
 export class CreateGameDto {
-    title: string;
-    gameMaster: string;
-    players: string[];
-    description: string;
-    image:File;
+  title: string;
+  gameMaster: string;
+  players: string[];
+  description: string;
+  image: File;
 }
 
 export class Profile {
-    name: string;
-    assets: Asset[];
-    games: GameSession[];
+  name: string;
+  assets: Asset[];
+  games: GameSession[];
 }
