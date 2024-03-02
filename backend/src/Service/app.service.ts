@@ -139,6 +139,7 @@ export class AppService {
   addGameSession(gameSession: GameSession): void {
     MOCKED_SESSIONS.push(gameSession);
     console.log(gameSession);
+    console.log(MOCKED_SESSIONS);
   }
 
   getAssets(): Asset[] {
