@@ -7,7 +7,7 @@ export class GameSession {
   imageUrl: string;
 }
 
-export interface Asset {
+export class Asset {
   id: string;
   title: string;
   description: string;

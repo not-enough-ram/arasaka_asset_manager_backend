@@ -1,4 +1,4 @@
-import { Controller, Get } from "@nestjs/common";
+import { Controller, Get, Post, Query } from "@nestjs/common";
 import { AppService } from "../Service/app.service";
 import { Asset, GameSession, Profile } from "../Interfaces/Types";
 
@@ -10,6 +10,17 @@ export class AppController {
   getGameSessions(): GameSession[] {
     console.log("/my-games queried");
     return this.appService.getGameSessions();
+  }
+
+  @Get("/my-games")
+  getGameSessionById(@Query("id") id: string): GameSession | undefined {
+    console.log("/my-games queried with id:", id);
+    return this.appService.getGameSessionById(id);
+  }
+
+  @Post("/my-games")
+  addGameSession(gameSession: GameSession) {
+    this.appService.addGameSession(gameSession);
   }
 
   @Get("/my-assets")
